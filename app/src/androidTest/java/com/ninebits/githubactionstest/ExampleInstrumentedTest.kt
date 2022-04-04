@@ -15,10 +15,16 @@ import org.junit.Assert.*
  */
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
-    @Test
+//    @Test
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.ninebits.githubactionstest", appContext.packageName)
+    }
+
+    @Test
+    fun testSimple() {
+        val response = "Success"
+        assertEquals("Success", response)
     }
 }
